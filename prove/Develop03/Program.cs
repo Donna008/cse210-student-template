@@ -23,7 +23,7 @@ class Program
             new Scripture(new Reference("Mosiah 3:20"),"And moreover, I say unto you, that the time shall come when the aknowledge of a bSavior shall spread throughout cevery nation, kindred, tongue, and people."),
            
         };
-
+        //  Exceeds core requirements: added choose scriptures at random to present to the user.
         Random _random = new Random();
         Scripture _selectedScripture = _scriptures[_random.Next(_scriptures.Count)];
 
