@@ -1,0 +1,2 @@
+SimpleGoal:|dddd|www|10|1
+SimpleGoal:|sss|fff|10|1
