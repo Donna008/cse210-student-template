@@ -5,6 +5,7 @@ public class Move
 
     public Move (int cellNum, char symbol)
     {
+        Console.Clear();
         CellNum = cellNum;
         Symbol = symbol;
     }

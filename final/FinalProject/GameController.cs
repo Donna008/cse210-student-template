@@ -37,7 +37,7 @@ public class GameController
         while (!IsGameOver())
         {
             _board.Display();
-            Console.WriteLine($"Player {_currentPlayer.Symbol}'s turn");
+            Console.WriteLine($"\nPlayer {_currentPlayer.Symbol}'s turn\n");
             Move move = _currentPlayer.MakeMove(_board);
             _board.UpdateCell(move.CellNum, move.Symbol);
             SwitchPlayers();
@@ -45,11 +45,15 @@ public class GameController
         _board.Display();
         if(_board.IsWinner(_player1.Symbol))
         {
-            Console.WriteLine("Player 1 wins");
+            Console.WriteLine("\nPlayer 1 wins\n");
         }
         else if (_board.IsWinner(_player2.Symbol))
         {
-            Console.WriteLine("Player 2 wins");
+            Console.WriteLine("\nPlayer 2 wins\n");
+        }
+        else
+        {
+            Console.WriteLine("\nOops, no winner");
         }
     }
 }

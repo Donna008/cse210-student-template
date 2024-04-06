@@ -10,9 +10,10 @@ public class HumanPlayer: Player
         {
             try
             {
-                Console.Write("Enter cell number (0-8): ");
-                int cellNum = int.Parse(Console.ReadLine());
-                if (board.IsCellEmpty(cellNum))
+                Console.Write("Enter cell number (1-9): ");
+                int cellNum = int.Parse(Console.ReadLine()) -1;
+                // if (board.IsCellEmpty(cellNum))
+                if (cellNum >= 0 && cellNum < 9 && board.IsCellEmpty(cellNum) )
                 {
                     return new Move(cellNum,_symbol);
                 }
