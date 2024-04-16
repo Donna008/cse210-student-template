@@ -103,8 +103,8 @@ do
         Console.Write("Do you want to play again? y/n ");
         string playAgainInput = Console.ReadLine();
         playAgain = playAgainInput.ToLower()== "y";
-}while(playAgain);
-Console.WriteLine("Have a great day");
+        }while(playAgain);
+        Console.WriteLine("Have a great day");
     }
     
     }
